@@ -33,11 +33,11 @@ def insert(root, data)
 end
 
 # Creating an example tree
-# M
-# / \
-# B Q
-# / \ \
-# A C Z
+#     M
+#    / \
+#   B   Q
+#  / \   \
+# A   C   Z
 root = nil
 root = insert(root, 'M')
 root = insert(root, 'B')
