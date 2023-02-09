@@ -1,3 +1,4 @@
+#Node represents a node in the binary tree. `data` is just the letters in the tree. `left` and `right` are references to its left and right child nodes.
 class Node
   attr_accessor :data, :left, :right
   
@@ -32,12 +33,20 @@ def insert(root, data)
   root
 end
 
+def print_tree(root, prefix = "", is_left = true)
+  return if root.nil?
+  print_tree(root.right, "#{prefix}#{is_left ? "│ " : " "}", false)
+  puts "#{prefix}#{is_left ? "└─" : "┌─"}#{root.data}"
+  print_tree(root.left, "#{prefix}#{is_left ? " " : "│ "}", true)
+end
+
 # Creating an example tree
 #     M
 #    / \
 #   B   Q
 #  / \   \
 # A   C   Z
+
 root = nil
 root = insert(root, 'M')
 root = insert(root, 'B')
@@ -47,4 +56,6 @@ root = insert(root, 'A')
 root = insert(root, 'C')
 
 # Print nodes in level order
-level_order(root)
+#level_order(root)
+
+print_tree(root)
