@@ -33,9 +33,7 @@ def insert(root, data)
 end
 
 # Creating an example tree
-# Mreturn if root.nil?
-queue = []
-queue.push(root)
+# M
 # / \
 # B Q
 # / \ \
