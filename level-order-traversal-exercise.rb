@@ -15,11 +15,11 @@ def level_order(root)
   return if root.nil?
   queue = []
   queue.push(root)
-  while !queue.empty?
+  while !queue.empty? # i.e. while there is at least one discovered node
     current = queue.shift
-    print "#{current.data} "
-    queue.push(current.left) unless current.left.nil?
-    queue.push(current.right) unless current.right.nil?
+    print "#{current.data} " # visits the node
+    queue.push(current.left) if !current.left.nil?
+    queue.push(current.right) if !current.right.nil?
   end
 end
 
@@ -53,28 +53,29 @@ end
 root = nil
 root = insert(root, 'M')
 print_tree(root)
-sleep(1)
+sleep(0.6)
 puts ''
 root = insert(root, 'B')
 print_tree(root)
-sleep(1)
+sleep(0.6)
 puts ''
 root = insert(root, 'Q')
 print_tree(root)
-sleep(1)
+sleep(0.6)
 puts ''
 root = insert(root, 'Z')
 print_tree(root)
-sleep(1)
+sleep(0.6)
 puts ''
 root = insert(root, 'A')
 print_tree(root)
-sleep(1)
+sleep(0.6)
 puts ''
 root = insert(root, 'C')
 print_tree(root)
 
 
 # Print nodes in level order
-#level_order(root)
+level_order(root)
 
+puts root
