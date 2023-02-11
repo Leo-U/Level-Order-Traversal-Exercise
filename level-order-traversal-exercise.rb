@@ -62,7 +62,7 @@ end
 # A   C   Z
 
 root = nil
-root = insert_array(root, ['M','B','Q','Z','A','C',])
+root = build_tree(root, ['M','B','Q','Z','A','C',])
 
 # Print nodes in level order
 level_order(root)
