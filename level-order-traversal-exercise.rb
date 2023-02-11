@@ -1,4 +1,4 @@
-# Node represents a node in the binary tree. `data` is just the letters in the tree. `left` and `right` are references to its left and right child nodes.
+# Node represents a node in the binary tree. `data` can be just a letter like 'H'. `left` and `right` are either nil by default (nil means no left or right child node is present), or are equal to another instance of the Node class, allowing an entire tree to be stored recursively in one node.
 class Node
   attr_accessor :data, :left, :right
   
@@ -37,13 +37,14 @@ end
 
 # builds entire tree using input array.
 def build_tree(root, array)
+  root = nil
   array.each do |data|
     root = insert(root, data)
     print_tree(root)
     puts ''
     sleep(0.6)
   end
-  return root
+  root
 end
 
 #prints a graphical representation of the tree to the terminal.
@@ -61,10 +62,9 @@ end
 #  / \   \
 # A   C   Z
 
-root = nil
-root = build_tree(root, ['M','B','Q','Z','A','C',])
+root = build_tree(root, ['M','B','Q','Z','A','C'])
 
 # Print nodes in level order
 level_order(root)
 
-puts root
+p root
