@@ -35,6 +35,17 @@ def insert(root, data)
   root
 end
 
+# builds entire tree using input array.
+def build_tree(root, array)
+  array.each do |data|
+    root = insert(root, data)
+    print_tree(root)
+    puts ''
+    sleep(0.6)
+  end
+  return root
+end
+
 #prints a graphical representation of the tree to the terminal.
 def print_tree(root, prefix = "", is_left = true)
   return if root.nil?
@@ -51,29 +62,7 @@ end
 # A   C   Z
 
 root = nil
-root = insert(root, 'M')
-print_tree(root)
-sleep(0.6)
-puts ''
-root = insert(root, 'B')
-print_tree(root)
-sleep(0.6)
-puts ''
-root = insert(root, 'Q')
-print_tree(root)
-sleep(0.6)
-puts ''
-root = insert(root, 'Z')
-print_tree(root)
-sleep(0.6)
-puts ''
-root = insert(root, 'A')
-print_tree(root)
-sleep(0.6)
-puts ''
-root = insert(root, 'C')
-print_tree(root)
-
+root = insert_array(root, ['M','B','Q','Z','A','C',])
 
 # Print nodes in level order
 level_order(root)
