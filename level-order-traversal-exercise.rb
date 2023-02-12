@@ -40,9 +40,9 @@ def build_tree(root, array)
   root = nil
   array.each do |data|
     root = insert(root, data)
-    print_tree(root)
-    puts ''
-    sleep(0.6)
+    # print_tree(root)
+    # puts ''
+    # sleep(0.6)
   end
   root
 end
@@ -63,8 +63,6 @@ end
 # A   C   Z
 
 root = build_tree(root, ['M','B','Q','Z','A','C'])
-
+print_tree(root)
 # Print nodes in level order
 level_order(root)
-
-p root
