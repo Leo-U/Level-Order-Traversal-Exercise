@@ -1,4 +1,4 @@
-### Level-Order-Traversal-Exercise
+### Level Order Traversal (Depth First Search) Exercise
 
 This code is converted to Ruby from C++ by ChatGPT for personal educational purposes.
 
