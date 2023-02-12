@@ -28,12 +28,13 @@ end
 
 # takes the root node and data of a new node to be inserted into the tree, and returns the updated root node after inserting the new node in the appropriate place.
 def insert(root, data)
+  #data = Z
   if root.nil?
     root = Node.new(data)
   elsif data <= root.data
-    root.left = insert(root.left, data)
+    root.left = insert(root.left, data) # the `left` field of `root` is re-written to a new object on line 32
   else
-    root.right = insert(root.right, data)
+    root.right = insert(root.right, data) # the `right field is re-written in the same way.
   end
   root
 end
@@ -65,7 +66,7 @@ end
 #  / \   \
 # A   C   Z
 
-root = build_tree(root, ['M','B','Q','Z','A','C'])
+root = build_tree(root, ['M','B','Q','Z','A','C','D'])
 print_tree(root)
 # Print nodes in level order
 level_order(root)
