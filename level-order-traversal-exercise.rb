@@ -1,3 +1,6 @@
+# this document is the commented & converted to ruby version of this educational resource: https://gist.github.com/mycodeschool/9507131
+# some additional code has been added (build_tree and print_tree)
+
 # Node represents a node in the binary tree. `data` can be just a letter like 'H'. `left` and `right` are either nil by default (nil means no left or right child node is present), or are equal to another instance of the Node class, allowing an entire tree to be stored recursively in one node.
 class Node
   attr_accessor :data, :left, :right
