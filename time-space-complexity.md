@@ -15,4 +15,4 @@ So, if time complexity is the amount of time it takes to finish an algorithm in 
 
 Yes, it is. More specifically, it's the rate of growth of memory with respect to input size.
 
-Level-order traversal has linear space complexity as well as linear time complexity. The space complexity can also be expressed as O(n).
+Level-order traversal has linear space complexity as well as linear time complexity. The space complexity can be expressed as O(n) in the worst or average case, and O(1) in the best case.
