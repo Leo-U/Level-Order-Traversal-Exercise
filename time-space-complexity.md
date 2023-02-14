@@ -10,7 +10,7 @@ However, in the case of a binary tree, the relationship is linear, represented b
 
 ### Space Complexity
 
-So, if time complexity is the amount of time it takes to finish an algorithm in respect to input size, is time complexity the amount of space required to finish an algorithm in respect to input size?
+So, if time complexity is the amount of time it takes to finish an algorithm in respect to input size, is space complexity the amount of space required to finish an algorithm in respect to input size?
 
 Yes, it is. More specifically, it's the rate of growth of memory with respect to input size.
 
