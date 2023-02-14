@@ -40,7 +40,7 @@ def insert(root, data)
 end
 
 # builds entire tree using input array.
-def build_tree(root, array)
+def build_tree(array)
   root = nil
   array.each do |data|
     root = insert(root, data)
@@ -66,7 +66,7 @@ end
 #  / \   \
 # A   C   Z
 
-root = build_tree(root, ['M','B','Q','Z','A','C','D'])
+root = build_tree(['M','B','Q','Z','A','C','D'])
 print_tree(root)
 # Print nodes in level order
 level_order(root)
