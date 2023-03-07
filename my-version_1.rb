@@ -45,7 +45,6 @@ def level_order(root)
   end
 end
 
-
 # the print_tree method:
 def print_tree(root, prefix = "", is_left = true)
   return if root.nil?
