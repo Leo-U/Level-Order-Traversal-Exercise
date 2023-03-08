@@ -1,4 +1,4 @@
-# this rewrite has been done one week after the completion of the Binary Search Trees project. the purpose is review (my tentative review sched is 1 week, 1 month, 3 months, 1 year)
+# this rewrite (#1) has been done one week after the completion of the Binary Search Trees project. the purpose is review
 
 # start with the Node class
 class Node
@@ -12,14 +12,14 @@ end
 
 # now write insert_node()
 def insert_node(root, data)
-  if root.nil?
+  if root.nil? # base case
     root = Node.new(data)
   elsif data <= root.data
     root.left = insert_node(root.left, data)
   else
     root.right = insert_node(root.right, data)
   end
-  root # this is the main action of the method. without this, the stack level will be too deep.
+  root # returned value after base case is `true`
 end
 
 # now write build_tree()
