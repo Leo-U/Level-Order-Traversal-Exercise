@@ -44,9 +44,6 @@ def build_tree(array)
   root = nil
   array.each do |data|
     root = insert(root, data)
-    # print_tree(root)
-    # puts ''
-    # sleep(0.6)
   end
   root
 end
