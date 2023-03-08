@@ -14,15 +14,14 @@ class Node
 end
 
 # takes the root node of a binary tree as input and prints its nodes in level order, using a queue data structure to keep track of the nodes to be processed.
-def level_order(root)
+def level_order(root, queue = [root])
   return if root.nil?
-  queue = []
-  queue.push(root)
   while !queue.empty? # i.e. while there is at least one discovered node
     current = queue.shift
     print "#{current.data} " # visits the node
     queue.push(current.left) if !current.left.nil?
     queue.push(current.right) if !current.right.nil?
+    sleep 0.5
   end
 end
 
