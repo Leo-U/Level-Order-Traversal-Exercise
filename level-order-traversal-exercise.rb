@@ -48,7 +48,7 @@ def build_tree(array)
   root
 end
 
-#prints a graphical representation of the tree to the terminal.
+#prints a visual of the tree to the terminal.
 def print_tree(root, prefix = "", is_left = true)
   return if root.nil?
   print_tree(root.right, "#{prefix}#{is_left ? "│ " : " "}", false)
@@ -63,7 +63,7 @@ end
 #  / \   \
 # A   C   Z
 
-root = build_tree(['M','B','Q','Z','A','C','D'])
+root = build_tree(['M','B','Q','Z','A','C'])
 print_tree(root)
 # Print nodes in level order
 level_order(root)
