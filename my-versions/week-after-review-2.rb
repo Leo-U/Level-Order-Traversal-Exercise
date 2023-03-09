@@ -1,4 +1,4 @@
-# this rewrite (#2) has been done one week after the completion of the Binary Search Trees project for the purpose is review
+# this rewrite (#2) has been done one week after the completion of the Binary Search Trees project for the purpose of review
 
 # start with the Node class
 class Node attr_accessor :data, :left, :right
