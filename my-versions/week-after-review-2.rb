@@ -1,7 +1,8 @@
 # this rewrite (file #2) has been done one week after the completion of the Binary Search Trees project for the purpose of review
 
 # start with the Node class
-class Node attr_accessor :data, :left, :right
+class Node
+  attr_accessor :data, :left, :right
   def initialize(data = nil, left = nil, right = nil)
     @data = data
     @left = left
