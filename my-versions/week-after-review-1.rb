@@ -1,4 +1,4 @@
-# this rewrite (#1) has been done one week after the completion of the Binary Search Trees project. the purpose is review
+# this rewrite (file #1) has been done one week after the completion of the Binary Search Trees project. the purpose is review
 
 # start with the Node class
 class Node
